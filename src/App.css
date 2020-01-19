@@ -16,11 +16,14 @@
 }
 
 body {
+  background: linear-gradient(to right bottom,rgba(61, 192, 176,.2),rgba(61, 192, 176,.2)) ,url('/background.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  background-position: 100% 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
-  color: #333;
+  color: #ddd;
 }
 
 a {
@@ -199,7 +202,7 @@ img {
 .btn {
   display: inline-block;
   background: var(--light-color);
-  color: #333;
+  color: #fff;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border: none;
@@ -482,40 +485,15 @@ table th {
   height: 20rem;
 }
 
+.trans{
+  background: linear-gradient(rgba(61, 192, 176,.5),rgba(61, 192, 176,.5));
+}
+
+.trans2{
+  background: linear-gradient(rgba(61, 192, 176,.1),rgba(61, 192, 176,.1));
+}
 
 /*Loader*/
-/*.lds-hourglass {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-hourglass:after {
-  content: " ";
-  display: block;
-  border-radius: 50%;
-  width: 0;
-  height: 0;
-  margin: 8px;
-  box-sizing: border-box;
-  border: 32px solid #fcf;
-  border-color: #fcf transparent #fcf transparent;
-  animation: lds-hourglass 1.2s infinite;
-}
-@keyframes lds-hourglass {
-  0% {
-    transform: rotate(0);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  50% {
-    transform: rotate(900deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  100% {
-    transform: rotate(1800deg);
-  }
-}
-*/
 
 .lds-ripple {
   display: inline-block;
@@ -525,7 +503,7 @@ table th {
 }
 .lds-ripple div {
   position: absolute;
-  border: 4px solid #000;
+  border: 4px solid #fff;
   opacity: 1;
   border-radius: 50%;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;

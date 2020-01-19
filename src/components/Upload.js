@@ -32,12 +32,12 @@ class Upload extends React.Component {
   render() {
     return (
     	<div className="container  ">
-    		<form onSubmit={this.onFormSubmit} className="form card  shadow">
+    		<form onSubmit={this.onFormSubmit} className="card shadow trans2">
 	        
-          <label htmlFor="files" className="btn btn-dark btn-block text-center">Select File</label>
+          <label htmlFor="files" className="btn btn-block text-center trans">Select File</label>
           Selected File: {this.state.file && this.state.file.name}
 	        <input id="files"  type="file" onChange={this.onChange} accept=".wav"style={{visibility:'hidden'}} />
-	        <button className="btn btn-dark btn-block" type="submit">Predict</button>
+	        <button className="btn btn-block trans" type="submit">Predict</button>
 	        <div className="container p-3 ">
           {this.state.loading ? 
             <Loader />
