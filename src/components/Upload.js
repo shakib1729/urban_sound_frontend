@@ -17,7 +17,7 @@ class Upload extends React.Component {
     e.preventDefault();
     const formData = new FormData();
     formData.append('file',this.state.file);
-    const fetchResponse = await fetch('http://127.0.0.1:5000/predict',{
+    const fetchResponse = await fetch('https://urban-sound-classification-api.herokuapp.com/predict',{
     	method: 'POST',
     	body: formData
     });
@@ -31,7 +31,7 @@ class Upload extends React.Component {
 
   render() {
     return (
-    	<div className="container  ">
+    	<div className="container">
     		<form onSubmit={this.onFormSubmit} className="card shadow trans2">
 	        
           <label htmlFor="files" className="btn btn-block text-center trans">Select File</label>
@@ -42,7 +42,7 @@ class Upload extends React.Component {
           {this.state.loading ? 
             <Loader />
             :
-            <p className="large text-center ">{this.state.prediction}</p>
+            <p className="large text-center text-light">{this.state.prediction}</p>
           }
           
           
