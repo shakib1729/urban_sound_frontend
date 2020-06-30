@@ -17,7 +17,7 @@ class Upload extends React.Component {
     e.preventDefault();
     const formData = new FormData();
     formData.append('file',this.state.file);
-    const fetchResponse = await fetch('https://urban-sound-backend.herokuapp.com/predict/',{
+    const fetchResponse = await fetch('https://urban-sound-backend.herokuapp.com/predict',{
     	method: 'POST',
     	body: formData
     });
