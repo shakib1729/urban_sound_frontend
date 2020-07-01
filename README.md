@@ -51,3 +51,30 @@ It contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes: 
 5) Build the frontend part of the web application using ReactJS which calls the API created using Flask.
 6) Deploy the web application on Heroku.
 <br/>
+
+## Results:
+1) Model containing 2 dropout layers (dropout rates as 0.5 and 0.5 respectively) and learning_rate=0.001 (default value):<br/>
+    Train Accuracy: 64.6% <br/>
+    Test Accuracy: 59.9% <br/>
+    The plot of accuracy on the training and validation datasets over training epochs.:<br/>
+    <p align="center">
+    <img src="https://user-images.githubusercontent.com/39847281/86269265-23c25800-bbe7-11ea-9079-f4636a9dd959.JPG"></p> <br/>
+    (This plot shows the accuracies while training where dropout layers are only activated for training dataset, hence train accuracy varies than when no dropout layer is activated) <br/><br/>
+ 2) Model containing 1 dropout layer (dropout rate as 0.5) and learning_rate=0.001 (default value):<br/>
+    Train Accuracy: 97% <br/>
+    Test Accuracy: 79.4% <br/>
+    The plot of accuracy on the training and validation datasets over training epochs.:<br/>
+    <p align="center">
+     <img src="https://user-images.githubusercontent.com/39847281/86270193-76e8da80-bbe8-11ea-98c5-201046a0f4bb.JPG"></p> <br/> <br/>
+ 3) Model containing 2 dropout layers (dropout rates as 0.5 and 0.5 respectively) and learning_rate=0.0005:<br/>
+    Train Accuracy: 90.19% <br/>
+    Test Accuracy: 80.2% <br/>
+    The plot of accuracy on the training and validation datasets over training epochs.:<br/>
+    <p align="center">
+     <img src="https://user-images.githubusercontent.com/39847281/86270663-39388180-bbe9-11ea-8a8e-ee4ee700f876.JPG"></p> <br/> <br/>
+ 4) Model containing 2 dropout layers (dropout rates as 0.3 and 0.5 respectively) and learning_rate=0.0005:<br/>
+    Train Accuracy: 96.4% <br/>
+    Test Accuracy: 83.3% <br/>
+    The plot of accuracy on the training and validation datasets over training epochs.:<br/>
+    <p align="center">
+     <img src="https://user-images.githubusercontent.com/39847281/86270942-b2d06f80-bbe9-11ea-9206-cd047447a2f8.JPG"></p> <br/> <br/>
