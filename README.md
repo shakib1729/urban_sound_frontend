@@ -1,5 +1,4 @@
 <h1 align="center">Sound Classification using Images - Urban Sound Classification</h1>
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/39847281/78693980-a05fd600-7919-11ea-96d9-e12e2a12ba3d.JPG"></p>
 <br/>
@@ -10,6 +9,8 @@
 This repository contains the frontend part of the web application implemented using ReactJS<br/>
 Backend using Flask: https://github.com/shakib1729/urban_sound_backend<br/>
 Jupyter Notebooks: https://github.com/shakib1729/urban-sound-cnn-jupyter<br/>
+#### Deployed on Heroku: https://urban-sound.herokuapp.com/ <br/>
+
 ## About the project.
 The goal of this project is to classify urban sounds into ten classes ('air_conditioner', 'car_horn', 'children_playing', 'dog_bark', 'drilling', 'engine_idling', 'gun_shot', 'jackhammer', 'siren', 'street_music'). <br/>
 This project classifies the sounds by first getting the visual representation of the sound and then using a CNN classifier to classify the sounds.<br/>
