@@ -16,9 +16,17 @@ This project classifies the sounds by first getting the visual representation of
 These visual representations of sounds are called spectrograms. <br/>
 In a spectrogram representation plot — one axis represents the time, the second axis represents frequencies and the colors represent magnitude (amplitude) of the observed frequency at a particular time.<br/>
 
+For example, the Spectrogram of a 'siren' sound is: <br/>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/39847281/86238925-04fa9c00-bbbc-11ea-87e0-7d2b0c26f2d3.png"></p>
+The Spectrogram of a 'jackhammer' sound is: <br/>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/39847281/86238994-1fcd1080-bbbc-11ea-928c-ad67a64aa3bc.png"></p> <br/>
+Using these spectrogram images, we classify the sounds<br/>
+
 ## Dataset:
 UrbanSound8k dataset: https://urbansounddataset.weebly.com <br/>
-It contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music.
+It contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music.<br/>
 
 ## Libraries/Frameworks used:
 1) Librosa - To load the sound files.
@@ -31,6 +39,8 @@ It contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes: 
 8) Flask - To deploy the CNN model.
 
 #### &nbsp; React - To build the front-end part of the web application
+<br/>
+
 
 ## Implementation:
 1) Load the audio files using librosa and save their spectrograms using matplotlib.
@@ -39,3 +49,4 @@ It contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes: 
 4) Build API for the CNN Model using Flask which will serve as the backend of the web application.
 5) Build the frontend part of the web application using ReactJS which calls the API created using Flask.
 6) Deploy the web application on Heroku.
+<br/>
